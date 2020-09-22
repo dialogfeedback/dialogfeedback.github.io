@@ -1,5 +1,5 @@
-title: Architect theme
-description: Architect is a theme for GitHub Pages.
+title: Reddit Dialogue Feedback Dataset
+description: A corpus to learn how human react to a Reddit comment.
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-architect
