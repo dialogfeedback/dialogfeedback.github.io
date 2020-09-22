@@ -10,30 +10,23 @@ Existing data-driven dialogue generation methods are mostly aimed to minimic the
 
 It is expensive to collect large-scale standard human evaluation data. Fortunately, there exists a huge amount of human feedback data (upvotes, number of replies, etc.) available on social platforms, such as Reddit. We leverage this data source and propose to train models to predict human feedback and help to build better chatbots.
 
-Directly predicting the feedback is a hard task and there're many confounding factors, e.g. the timing of the comments and subreddits (topics and audience). Instead, we formulate the tasks as only scoring "comparable" pairs of responses of the same context.
+# Tasks
 
+Directly predicting the feedback is a hard task and there're many confounding factors, e.g. the timing of the comments and subreddits (topics and audience). Instead, we formulate the tasks as only scoring "comparable" pairs of responses of the same context, and predict which one has more feedback, in terms of number of upvotes (`updown`) and number of replies (`depth` and `width`).
 
-# Leaderboard
+The totally training dataset contains ~87 millions of samples.
 
-|     | `updown` | `depth` | `width` |
-| :-------------      | :------: |:------------: |:--------: |
-| Length baseline |  0.531   | 0.543        | 0.591     | 
-| Bag-of-words baseline |  0.571   | 0.583        | 0.596     | 
-| Dialog ppl.         |  0.488   | 0.508         | 0.513     | 
-| Reverse dialog ppl. |  0.560   | 0.557         | 0.571     | 
-| [DialogRPT](https://github.com/golsun/DialogRPT) | **0.683** | **0.695**  | **0.752** | 
+|   Task  | Description  | Training size |
+| :------:| :---------------------------------- | :---:|
+| `updown`| which comment gets more upvotes?   | 40.7 M
+| `width` | which comment gets more direct replies?   | 22.3 M |
+| `depth` | which comment gets longer follow-up thread? | 25.1 M |
 
 # Dataset
 
 ## Train
 
 The training dataset is built from Reddit data from year 2011 to 2012
-
-|   Task  | Description | Size (millions) |
-| :------:| :---------------------------------- |:---: |
-| `updown`|  which comment gets more upvotes?   | 40.7 | 
-| `width` |  which comment gets more direct replies?   | 22.3 | 
-| `depth` | which comment gets longer follow-up thread? | 25.1 | 
 
 
 **Step 0.** Clone the repo.
@@ -111,3 +104,18 @@ We used `vali.tsv` from year `2013` as the test set (thus no overlap with the tr
 The training dataset is built from Reddit data year 2013.
 
 See [evaluation](https://github.com/golsun/DialogRPT#evaluation) for more details.
+
+
+# Leaderboard
+
+We evaluate the pairwise accuracy (a random guess is expected to have 0.5 accuracy)
+
+|     | `updown` | `depth` | `width` |
+| :-------------      | :------: |:------------: |:--------: |
+| Length baseline |  0.531   | 0.543        | 0.591     | 
+| Bag-of-words baseline |  0.571   | 0.583        | 0.596     | 
+| Dialog ppl.         |  0.488   | 0.508         | 0.513     | 
+| Reverse dialog ppl. |  0.560   | 0.557         | 0.571     | 
+| [DialogRPT](https://github.com/golsun/DialogRPT) | **0.683** | **0.695**  | **0.752** | 
+
+Want to submit a new results? Please [create an issue](https://github.com/golsun/DialogRPT/issues/new)!
