@@ -1,1 +1,3 @@
 theme: jekyll-theme-architect
+title: Reddit Dialog Feedback Dataset
+description: A dataset to learn which dialog response gets better human feedback. Leaderboard and Baslines available.
