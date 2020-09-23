@@ -34,7 +34,7 @@ wget https://xiagnlp2.blob.core.windows.net/dialogrpt/test.zip
 unzip test.zip
 ```
 ### Data description and example
-Click [here](./data_example) to see examples and description of the data.
+Click [here](./data_example.md) to see examples and description of the data.
 
 
 # Leaderboard
