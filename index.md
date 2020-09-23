@@ -17,7 +17,7 @@ We leverage millions of Reddit human feedback data (number of upvotes👍 or rep
 
 # Dataset
 
-## Downloading scripts
+### Downloading scripts
 
 **Traning** dataset uses Reddit data from year 2011 to 2012. It can be built with [this script](https://github.com/golsun/DialogRPT/blob/master/data.sh), which downloads raw data from [a third party dump](https://files.pushshift.io/reddit) and extract comparable pairs of comments for classification tasks. 
 
@@ -33,13 +33,13 @@ See expected [data file structure](./data_structure.md)
 wget https://xiagnlp2.blob.core.windows.net/dialogrpt/test.zip
 unzip test.zip
 ```
-## Data example
+### Data example
 See [data example](./data_description) and description of columns.
 
 
 # Leaderboard
 
-## Baselines
+### Baselines
 We evaluate the pairwise accuracy (a random guess is expected to have 0.5 accuracy)
 
 |     | `updown` | `depth` | `width` |
@@ -50,5 +50,5 @@ We evaluate the pairwise accuracy (a random guess is expected to have 0.5 accura
 | Reverse dialog ppl. |  0.560   | 0.557         | 0.571     | 
 | [DialogRPT](https://github.com/golsun/DialogRPT) | **0.683** | **0.695**  | **0.752** | 
 
-## Submit new results!
+### Submit new results!
 Want to submit a new results? Please [create an issue](https://github.com/golsun/DialogRPT/issues/new)!
