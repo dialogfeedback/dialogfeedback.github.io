@@ -30,7 +30,7 @@ unzip test.zip
 
 
 ## Data example
-The table below shows one line from the test csv file.
+The table below shows one line from a test tsv file (`test/human_feedback/updown.tsv`). Each line of the tsv file contains the following 11 columns delimited by tab.
 
 |  | Column | Example |
 | :-----: | :--------: | :-------- |
@@ -39,14 +39,15 @@ The table below shows one line from the test csv file.
 | 2 | `Response_B` | every invention has been the most important until the next one. One of the recent important ones was a clock. That's what allowed accurage navigation across Longitutde. |
 | 3 | `Context_IDs` | t3_1tvflj |
 | 4 | `Response_A_ID` | t1_cebtqav |
-| 5 | `Hour_Gap` | 0.03 |
-| 6 | `Response_A_Feedback` | 31 |
-| 6 | `Response_B_Feedback` | -3 |
-| 6 | `Response_A_Normalized_Rank ` | 0.8261 |
-| 6 | `Response_B_Normalized_Rank ` | 0.0000 |
+| 5 | `Response_B_ID` | t1_cebtpsw |
+| 6 | `Hour_Gap` | 0.03 |
+| 7 | `Response_A_Feedback` | 31 |
+| 8 | `Response_B_Feedback` | -3 |
+| 9 | `Response_A_Normalized_Rank ` | 0.8261 |
+| 10 | `Response_B_Normalized_Rank ` | 0.0000 |
 
 ## Header Description
-The table below describes each column of the csv file.
+The table below describes each column of the tsv file.
 
 | Column | Type | Description | 
 | :----- | :--------: | :-------- |
