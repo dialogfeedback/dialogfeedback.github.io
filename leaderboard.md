@@ -1,4 +1,4 @@
-[Go back to Home](.)
+[Go back Home](.)
 
 # Leaderboard
 
@@ -16,4 +16,4 @@ We evaluate the pairwise accuracy (a random guess is expected to have 0.5 accura
 ### Submit new results!
 Want to submit a new results? Please [create an issue](https://github.com/golsun/DialogRPT/issues/new)!
 
-[Go back to Home](.)
+[Go back Home](.)

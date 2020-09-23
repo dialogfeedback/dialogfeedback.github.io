@@ -1,4 +1,4 @@
-[Go back to Home](.)
+[Go back Home](.)
 
 # Dataset
 
@@ -100,4 +100,4 @@ This illustrates the expected file structure of the training dataset
 ```
 
 
-[Go back to Home](.)
+[Go back Home](.)
