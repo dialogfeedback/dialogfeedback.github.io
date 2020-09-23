@@ -2,9 +2,9 @@
 layout: default
 ---
 
-Existing data-driven dialogue generation methods are mostly aimed to minimic the human response distribution. However, even human responses have different quality: some of them are popular, getting lots of upvoted, and some of them are less interesting or even offensive. So, we probably should optimize something else.
+Existing data-driven dialogue generation methods are mostly aimed to minimic the human response distribution. However, even human responses have different quality: some of them are popular, getting lots of upvoted, and some of them are less interesting or even offensive. So, we probably should optimize or predict human feedback, instead of just perplexity.
 
-> Let's optimize expected human feedback, instead of just perplexity.
+> What kind of dialogue response gets better human feedback?
 
 We leverage millions of Reddit human feedback data (number of upvotes👍 or replies💬) to formulate the following dialogue ranking tasks, to help building more engaging conversational AI. See our [EMNLP paper](https://arxiv.org/abs/2009.06978) or view [our project on Github](https://github.com/golsun/DialogRPT) for more details.
 
