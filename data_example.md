@@ -1,9 +1,12 @@
+[Go back to Home](.)
+
+This is an example of the test csv file.
 
 | Context | Response A | Response B | Context IDs | Response A ID | Response B ID | Hour Gap | Response A Feedback | Response B Feedback | Response A Normalized Rank | Response B Normalized Rank |
 | :----- | :-------- | :-------- | :--------: |        :--------: | :--------: | :--------: | :--------: | :--------: | :--------: | :--------: | :--------: |
 | Dear Redditors. What do you consider the most important invention in human history?. | Still the Wheel... | every invention has been the most important until the next one. One of the recent important ones was a clock. That's what allowed accurage navigation across Longitutde. | t3_1tvflj | t1_cebtqav | t1_cebtpsw | 0.03 | 31 | -3 | 0.8261 | 0.0000 |
 
-
+The table below describes each column of the csv file.
 
 | Column | Type | Description |
 | :----- | :--------: | :-------- |

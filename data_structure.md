@@ -1,3 +1,6 @@
+[Go back to Home](.)
+
+This illustrates the expected file structure of the training dataset
 
 ```bash
 ├── data

@@ -33,8 +33,8 @@ See expected [data file structure](./data_structure.md)
 wget https://xiagnlp2.blob.core.windows.net/dialogrpt/test.zip
 unzip test.zip
 ```
-### Data example
-See [data example](./data_description) and description of columns.
+### Data description and example
+Click [here](./data_example) to see examples and description of the data.
 
 
 # Leaderboard
