@@ -6,7 +6,9 @@ Existing data-driven dialogue generation methods are mostly aimed to minimic the
 
 > **Which dialogue response gets better human feedback?**
 
-We leverage millions of Reddit human feedback data (number of upvotes👍 or replies💬) to formulate the following dialogue ranking tasks, to help building more engaging conversational AI. See our [EMNLP paper](https://arxiv.org/abs/2009.06978) or view [our project on Github](https://github.com/golsun/DialogRPT) for more details.
+We leverage millions of Reddit human feedback data (number of upvotes👍 or replies💬) to formulate the following dialogue ranking tasks, to help building more engaging conversational AI. 
+
+See our [EMNLP paper](https://arxiv.org/abs/2009.06978) or view [our project on Github](https://github.com/golsun/DialogRPT) for more details.
 
 
 |   Task  | Description  | Training size |
