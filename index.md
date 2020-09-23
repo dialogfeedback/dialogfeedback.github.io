@@ -15,5 +15,6 @@ We leverage millions of Reddit human feedback data (number of upvotes👍 or rep
 | `width` | which comment gets more direct replies💬?   | 22.3 M |
 | `depth` | which comment gets longer follow-up thread💬? | 25.1 M |
 
-# Next steps
+>
+
 Download the [**Dataset**](./data.md) and checkout the [**Leaderboard**](./leaderboard.md)
