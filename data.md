@@ -1,4 +1,4 @@
-[Go back Home](.)
+[Go back Home](.) | [View on Github](https://github.com/golsun/DialogRPT) | [EMNLP Paper](https://arxiv.org/abs/2009.06978) 
 
 # Dataset
 
@@ -101,4 +101,4 @@ This illustrates the expected file structure of the training dataset
 ```
 
 
-[Go back Home](.)
+[Go back Home](.) | [View on Github](https://github.com/golsun/DialogRPT) | [EMNLP Paper](https://arxiv.org/abs/2009.06978) 
