@@ -20,7 +20,7 @@
 
 title: Reddit Dialogue Feedback Dataset
 email: your-email@example.com
-description: A corpus to learn how human react to a Reddit comment.
+description: A dataset to learn which dialogue response gets better human feedback.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  golsun
