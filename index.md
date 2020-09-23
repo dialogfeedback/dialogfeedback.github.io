@@ -2,19 +2,12 @@
 layout: default
 ---
 
-# About
-
 Existing data-driven dialogue generation methods are mostly aimed to minimic the human response distribution. However, even human responses have different quality: some of them are popular, getting lots of upvoted, and some of them are less interesting or even offensive. So, we probably should optimize something else.
 
 > Let's optimize expected human feedback, instead of just perplexity.
 
-It is expensive to collect large-scale standard human evaluation data. Fortunately, there exists a huge amount of human feedback data (upvotes, number of replies, etc.) available on social platforms, such as Reddit. We leverage this data source and propose to train models to predict human feedback and help to build better chatbots. See our [EMNLP paper]() for more details.
+We leverage millions of Reddit human feedback data (number of upvotes👍 or replies💬) to formulate the following dialogue ranking tasks, to help building more engaging conversational AI. See our [EMNLP paper](https://arxiv.org/abs/2009.06978) or view [our project on Github](https://github.com/golsun/DialogRPT) for more details.
 
-# Tasks
-
-Directly predicting the feedback is a hard task and there're many confounding factors, e.g. the timing of the comments and subreddits (topics and audience). Instead, we formulate the tasks as only scoring "comparable" pairs of responses of the same context, and predict which one has more feedback, in terms of number of upvotes👍 or replies💬.
-
-The totally training dataset contains about 87 millions of samples.
 
 |   Task  | Description  | Training size |
 | :------:| :---------------------------------- | :---:|
@@ -23,6 +16,8 @@ The totally training dataset contains about 87 millions of samples.
 | `depth` | which comment gets longer follow-up thread💬? | 25.1 M |
 
 # Dataset
+
+## Downloading scripts
 
 **Traning** dataset uses Reddit data from year 2011 to 2012. It can be built with [this script](https://github.com/golsun/DialogRPT/blob/master/data.sh), which downloads raw data from [a third party dump](https://files.pushshift.io/reddit) and extract comparable pairs of comments for classification tasks. 
 
@@ -44,6 +39,7 @@ See [data example](./data_description) and description of columns.
 
 # Leaderboard
 
+## Baselines
 We evaluate the pairwise accuracy (a random guess is expected to have 0.5 accuracy)
 
 |     | `updown` | `depth` | `width` |
